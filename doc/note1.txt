@@ -1,0 +1,73 @@
+{message: "Auth successful", token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyRW1ha…zQxfQ.XtBqa3emE_PvQLvtdbmSCCaf5yQeSHzH5ifebajdevY", data: {…}}
+message: "Auth successful"
+token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyRW1haWwiOiJSb3lHcmlmZml0aEBnbWFpbC5jb20iLCJVc2VySUQiOjUsImlhdCI6MTU4MjU2ODE0MSwiZXhwIjoxNTgyNTcxNzQxfQ.XtBqa3emE_PvQLvtdbmSCCaf5yQeSHzH5ifebajdevY"
+data:
+UserID: 5
+UserEmail: "RoyGriffith@gmail.com"
+UserPassword: "$2a$10$N6Rj/07xX7Dm4roWCOckSOwvG5/PaHp564rN8Hm0a.Oi/A1lf/8rS"
+Group: "Admin"
+FirstName: "Roy"
+LastName: "Griffith"
+
+____________________________________
+
+export interface Iuser {
+    UserID: number;
+    UserEmail: string;
+    UserPassword: string;
+    Group: string;
+    FirstName: string;
+    LastName: string;
+}
+____________________________________
+
+
+import { Iuser } from './user';
+
+export interface Iauth {
+    "message": string,
+    "token": string,
+    "data": Iuser
+}
+
+
+====================================================
+
+> ng add @angular/material
+
+> npm i highcharts-angular --save
+
+> npm i highcharts --save
+
+> npm i @angular/flex-layout @angular/cdk --save
+
+> ng g c layouts/default
+> ng g m layouts/default
+
+> ng g c modules/dashboard
+
+> ng g c shared/widgets/card
+
+
+how do i include flex-layout
+https://stackoverflow.com/questions/59942761/how-do-i-include-flex-layout
+
+NO!!
+> npm install --save tslib
+
+package.json
+
+"@angular/flex-layout": "^9.0.0-beta.+",
+back to 8 I'm using Angular 8+
+"@angular/flex-layout": "^8.0.0-beta.27"
+
+___________________________________________________
+
+Angular 8 Admin Dashboard Panel from scratch using Angular Material, highcharts and flex-layout
+https://www.youtube.com/watch?v=FP7Hs8lTy1k
+
+Stopped at: 31:20 / 1:01:19
+
+
+
+Stopped 
